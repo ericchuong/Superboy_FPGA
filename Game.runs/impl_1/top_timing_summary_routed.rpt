@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Thu Nov  9 14:55:33 2017
+| Date         : Mon Nov 13 02:33:15 2017
 | Host         : XPS15-LAPTOP running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -52,7 +52,7 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 111 register/latch pins with no clock driven by root clock pin: clk_generator/clk_reg_reg/Q (HIGH)
+ There are 129 register/latch pins with no clock driven by root clock pin: clk_generator/clk_reg_reg/Q (HIGH)
 
  There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[2]/Q (HIGH)
 
@@ -189,7 +189,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 361 pins that are not constrained for maximum delay. (HIGH)
+ There are 415 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -345,7 +345,7 @@ Slack (MET) :             6.529ns  (required time - arrival time)
     SLICE_X52Y96         FDCE (Prop_fdce_C_Q)         0.456     5.684 f  clk_generator/clk_reg_reg/Q
                          net (fo=1, routed)           0.725     6.408    clk_50m
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     6.504 f  clk_50m_BUFG_inst/O
-                         net (fo=112, routed)         2.064     8.568    clk_generator/CLK
+                         net (fo=130, routed)         2.064     8.568    clk_generator/CLK
     SLICE_X52Y96         LUT1 (Prop_lut1_I0_O)        0.124     8.692 r  clk_generator/clk_reg_i_1/O
                          net (fo=1, routed)           0.000     8.692    clk_generator/clk_next
     SLICE_X52Y96         FDCE                                         r  clk_generator/clk_reg_reg/D
@@ -405,7 +405,7 @@ Slack (MET) :             1.102ns  (arrival time - required time)
     SLICE_X52Y96         FDCE (Prop_fdce_C_Q)         0.141     1.624 f  clk_generator/clk_reg_reg/Q
                          net (fo=1, routed)           0.271     1.895    clk_50m
     BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.921 f  clk_50m_BUFG_inst/O
-                         net (fo=112, routed)         0.710     2.631    clk_generator/CLK
+                         net (fo=130, routed)         0.710     2.631    clk_generator/CLK
     SLICE_X52Y96         LUT1 (Prop_lut1_I0_O)        0.045     2.676 r  clk_generator/clk_reg_i_1/O
                          net (fo=1, routed)           0.000     2.676    clk_generator/clk_next
     SLICE_X52Y96         FDCE                                         r  clk_generator/clk_reg_reg/D

@@ -40,14 +40,26 @@ module game_graph_animate
       //--------------------------------------------
       // wall top, bottom boundary
       localparam WALL_Y_T = 0;
-      localparam WALL_Y_B = 175;
-      localparam WALL_X_L = 550;
-      localparam WALL_X_R = 600;
+      localparam WALL_Y_B = 100;
       
-      localparam WALL2_Y_T = 275;
+      localparam WALL2_Y_T = 200;
       localparam WALL2_Y_B = 450;
-      localparam WALL2_X_L = 550;
-      localparam WALL2_X_R = 600;
+      
+      localparam WALL_X_SIZE = 50;
+      
+      wire [9:0] wall_x_l, wall_x_r, wall2_x_l, wall2_x_r;
+      reg [9:0] wall_x_reg, wall_x_next, wall2_x_reg, wall2_x_next;
+      localparam WALL_V = 2;
+      
+      // second wall
+      localparam WALL3_Y_T = 0;
+      localparam WALL3_Y_B = 225;
+      
+      localparam WALL4_Y_T = 325;
+      localparam WALL4_Y_B = 450;
+            
+      wire [9:0] wall3_x_l, wall3_x_r, wall4_x_l, wall4_x_r;
+      reg [9:0] wall3_x_reg, wall3_x_next, wall4_x_reg, wall4_x_next;
       
      //--------------------------------------------
       // bottom horizontal bar
@@ -128,8 +140,8 @@ module game_graph_animate
       //--------------------------------------------
       // object output signals
       //--------------------------------------------
-      wire wall_on, wall2_on, bar_on, sq_ball_on, rd_ball_on;
-      wire [2:0] wall_rgb, wall2_rgb, bar_rgb, ball_rgb;
+      wire wall_on, wall2_on, wall3_on, wall4_on, bar_on, sq_ball_on, rd_ball_on;
+      wire [2:0] wall_rgb, wall2_rgb, wall3_rgb, wall4_rgb, bar_rgb, ball_rgb;
       wire ground_on;
       wire [2:0] ground_rgb;
       wire sq_cloud1_on, rd_cloud1_on, sq_cloud2_on, rd_cloud2_on, sq_cloud3_on, rd_cloud3_on;
@@ -327,7 +339,11 @@ module game_graph_animate
          if (reset)
             begin
 //               bar_y_reg <= 0;
-               ball_x_reg <= 30;
+               wall_x_reg <= MAX_X; // 640
+               wall2_x_reg <= MAX_X; // 640
+               wall3_x_reg <= 100;
+               wall4_x_reg <= 100;               
+               ball_x_reg <= 100;
                ball_y_reg <= 0;
                x_delta_reg <= 10'h004;
                y_delta_reg <= 10'h004;
@@ -335,6 +351,10 @@ module game_graph_animate
          else
             begin
 //               bar_y_reg <= bar_y_next;
+               wall_x_reg <= wall_x_next;
+               wall2_x_reg <= wall2_x_next;
+               wall3_x_reg <= wall3_x_next;
+               wall4_x_reg <= wall4_x_next;
                ball_x_reg <= ball_x_reg;
                ball_y_reg <= ball_y_next;
                x_delta_reg <= x_delta_reg;
@@ -349,13 +369,32 @@ module game_graph_animate
       // (wall) top horizontal strip
       //--------------------------------------------
       // pixel within wall
+      assign wall_x_l = wall_x_reg;
+      assign wall_x_r = wall_x_l + WALL_X_SIZE - 1;
+      
+      assign wall2_x_l = wall2_x_reg;
+      assign wall2_x_r = wall2_x_l + WALL_X_SIZE - 1;
+     
+      assign wall3_x_l = wall3_x_reg;
+      assign wall3_x_r = wall3_x_l + WALL_X_SIZE - 1;
+      
+      assign wall4_x_l = wall4_x_reg;
+      assign wall4_x_r = wall4_x_l + WALL_X_SIZE - 1;
+       
       assign wall_on = (WALL_Y_T<=pix_y) && (pix_y<=WALL_Y_B) && 
-        (WALL_X_L <= pix_x) && (pix_x <= WALL_X_R);
+        (wall_x_l <= pix_x) && (pix_x <= wall_x_r);
       assign wall2_on = (WALL2_Y_T<=pix_y) && (pix_y<=WALL2_Y_B) && 
-        (WALL2_X_L <= pix_x) && (pix_x <= WALL2_X_R); 
+        (wall2_x_l <= pix_x) && (pix_x <= wall2_x_r); 
+      assign wall3_on = (WALL3_Y_T<=pix_y) && (pix_y<=WALL3_Y_B) && 
+        (wall3_x_l <= pix_x) && (pix_x <= wall3_x_r); 
+      assign wall4_on = (WALL4_Y_T<=pix_y) && (pix_y<=WALL4_Y_B) && 
+        (wall4_x_l <= pix_x) && (pix_x <= wall4_x_r); 
+        
       // wall rgb output
       assign wall_rgb = 3'b100; // red
       assign wall2_rgb = 3'b100;// red
+      assign wall3_rgb = 3'b100;// red
+      assign wall4_rgb = 3'b100;// red
       
       //ground on
       assign ground_on = (GROUND_Y_T<=pix_y) && (pix_y<=GROUND_Y_B);
@@ -377,8 +416,15 @@ module game_graph_animate
       
       always @*
       begin
-//         bar_y_next = bar_y_reg; // no move
-           
+           wall_x_next = (refr_tick) ? wall_x_reg - WALL_V : wall_x_reg;
+           wall2_x_next = (refr_tick) ? wall2_x_reg - WALL_V : wall2_x_reg;
+           wall3_x_next = (refr_tick) ? wall3_x_reg - WALL_V : wall3_x_reg;
+           wall4_x_next = (refr_tick) ? wall4_x_reg - WALL_V : wall4_x_reg;
+      end
+      
+      always @*
+      begin
+      //         bar_y_next = bar_y_reg; // no move
          if (refr_tick)
          begin
 //            if (button && (bar_y_b < (MAX_Y-1-BAR_V))) 
@@ -542,6 +588,10 @@ module game_graph_animate
                graph_rgb = wall_rgb;
             else if (wall2_on)
                graph_rgb = wall2_rgb;
+            else if (wall3_on)
+               graph_rgb = wall3_rgb;
+            else if (wall4_on)
+               graph_rgb = wall4_rgb;
             else if (ground_on)
                graph_rgb = ground_rgb;
             else if (bar_on)
