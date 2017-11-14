@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date             : Mon Nov 13 16:48:24 2017
+| Date             : Tue Nov 14 14:24:11 2017
 | Host             : XPS15-LAPTOP running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -50,15 +50,15 @@ Table of Contents
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |    <0.001 |        3 |       --- |             --- |
-| Slice Logic              |    <0.001 |      673 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |      364 |     63400 |            0.57 |
+| Slice Logic              |     0.001 |      717 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |      390 |     63400 |            0.62 |
 |   LUT as Distributed RAM |    <0.001 |        8 |     19000 |            0.04 |
 |   CARRY4                 |    <0.001 |       19 |     15850 |            0.12 |
-|   Register               |    <0.001 |      125 |    126800 |            0.10 |
-|   F7/F8 Muxes            |    <0.001 |       18 |     63400 |            0.03 |
+|   Register               |    <0.001 |      137 |    126800 |            0.11 |
+|   F7/F8 Muxes            |    <0.001 |       19 |     63400 |            0.03 |
 |   BUFG                   |    <0.001 |        1 |        32 |            3.13 |
-|   Others                 |     0.000 |       18 |       --- |             --- |
-| Signals                  |    <0.001 |      458 |       --- |             --- |
+|   Others                 |     0.000 |       17 |       --- |             --- |
+| Signals                  |    <0.001 |      498 |       --- |             --- |
 | Block RAM                |    <0.001 |      0.5 |       135 |            0.37 |
 | I/O                      |    <0.001 |       10 |       210 |            4.76 |
 | Static Power             |     0.097 |          |           |                 |
@@ -72,7 +72,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.017 |       0.002 |      0.015 |
+| Vccint    |       1.000 |     0.018 |       0.003 |      0.015 |
 | Vccaux    |       1.800 |     0.018 |       0.000 |      0.018 |
 | Vcco33    |       3.300 |     0.004 |       0.000 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |

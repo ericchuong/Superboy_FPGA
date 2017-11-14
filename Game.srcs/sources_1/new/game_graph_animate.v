@@ -148,11 +148,11 @@ module game_graph_animate
       wire sq_cloud1_on, rd_cloud1_on, sq_cloud2_on, rd_cloud2_on, sq_cloud3_on, rd_cloud3_on;
       wire [2:0] cloud1_rgb, cloud2_rgb, cloud3_rgb;
             
-      integer mcounter = 0;
-      integer counter_logic = 1;
-      integer counter_logic2 = 1;
-      reg [3:0]dig1;
-      reg [3:0]dig0;
+//      integer mcounter = 0;
+      integer counter_logic = 0;
+      integer counter_logic2 = 0;
+      wire [3:0] dig1, dig0;
+      reg [3:0] dig0_reg, dig1_reg, dig0_next, dig1_next;
       // body
       //--------------------------------------------
       // round ball image ROM
@@ -349,7 +349,8 @@ module game_graph_animate
                ball_y_reg <= 100;
                x_delta_reg <= 10'h004;
                y_delta_reg <= 10'h004;
-               mcounter = 0;
+               dig1_reg <= 0;
+               dig0_reg <= 0;
             end
          else
             begin
@@ -362,6 +363,8 @@ module game_graph_animate
                ball_y_reg <= ball_y_next;
                x_delta_reg <= x_delta_reg;
                y_delta_reg <= y_delta_next;
+               dig1_reg <= dig1_next;
+               dig0_reg <= dig0_next;
             end
    
       // refr_tick: 1-clock tick asserted at start of v-sync
@@ -541,56 +544,53 @@ module game_graph_animate
       //--------------------------------------------
       // score counter
       //--------------------------------------------
-      always@* 
+      
+      always@*
       begin
-         if ( refr_tick && (counter_logic == 1) &&
-          ((wall_x_l == 2) && (wall_x_r == 51) )) // if a wall1 hits the left screen
+         dig0_next = dig0_reg;
+         dig1_next = dig1_reg;
+         
+         if ( (refr_tick && (wall_x_l == 132)) ||
+           (refr_tick && (wall3_x_l == 132)) )
          begin
-            mcounter = (mcounter + counter_logic);
-            counter_logic = 0;
+            if (dig0_reg == 9)
+            begin
+               dig0_next = 0;
+               if (dig1_reg == 9)
+                  dig1_next = 0;
+               else
+                  dig1_next = dig1_reg + 1;
+            end
+  
+            else
+               dig0_next = dig0_reg + 1;
          end
          
-         else if ( refr_tick && (counter_logic2 == 1) &&
-          ((wall3_x_l == 2) && (wall3_x_r == 51) ))
+         else if ( refr_tick &&
+          ((wall_x_l < 133) && (wall_x_r > 100))
+            )
          begin
-            mcounter = (mcounter + counter_logic2);
-            counter_logic2 = 0;
+            if ((ball_y_b > WALL2_Y_T) || (ball_y_t < WALL_Y_B))
+            begin
+               dig0_next = 0;
+               dig1_next = 0;
+            end
          end
-         
-         else if (refr_tick && (wall_x_l == 550))
-            counter_logic = 1;
             
-         else if (refr_tick && (wall3_x_l == 550))
-            counter_logic2 = 1;
+         else if ( refr_tick &&
+          ((wall3_x_l < 133) && (wall3_x_r > 100))
+            )
+         begin
+            if ((ball_y_b > WALL4_Y_T) || (ball_y_t < WALL3_Y_B))
+            begin
+               dig0_next = 0;
+               dig1_next = 0;
+            end
+         end
       end
       
-      always@*
-      case((mcounter%(10)))
-         0: dig0 = 4'b0000; // 1s digit
-         1: dig0 = 4'b0001; //
-         2: dig0 = 4'b0010; //
-         3: dig0 = 4'b0011; //
-         4: dig0 = 4'b0100; //
-         5: dig0 = 4'b0101; //
-         6: dig0 = 4'b0110; //
-         7: dig0 = 4'b0111; //
-         8: dig0 = 4'b1000; //
-         9: dig0 = 4'b1001; //
-      endcase
-      
-      always@*
-      case((mcounter/(10)))
-         0: dig1 = 4'b0000; // 10s digit
-         1: dig1 = 4'b0001; //
-         2: dig1 = 4'b0010; //
-         3: dig1 = 4'b0011; //
-         4: dig1 = 4'b0100; //
-         5: dig1 = 4'b0101; //
-         6: dig1 = 4'b0110; //
-         7: dig1 = 4'b0111; //
-         8: dig1 = 4'b1000; //
-         9: dig1 = 4'b1001; //
-      endcase
+      assign dig0 = dig0_reg;
+      assign dig1 = dig1_reg;
       
       wire text_on, text_rgb;
       
