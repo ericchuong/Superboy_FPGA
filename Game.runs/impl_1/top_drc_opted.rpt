@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Mon Nov 13 02:32:25 2017
+| Date         : Mon Nov 13 16:47:36 2017
 | Host         : XPS15-LAPTOP running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_opted.rpt
 | Design       : top
@@ -24,12 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 12
+             Violations found: 9
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
-| REQP-1840 | Warning  | RAMB18 async control check                          | 11         |
+| REQP-1840 | Warning  | RAMB18 async control check                          | 8          |
 +-----------+----------+-----------------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -83,21 +83,6 @@ The RAMB18E1 game_graph_an_unit/score_text/font_unit/addr_reg_reg has an input c
 Related violations: <none>
 
 REQP-1840#8 Warning
-RAMB18 async control check  
-The RAMB18E1 game_graph_an_unit/score_text/font_unit/addr_reg_reg has an input control pin game_graph_an_unit/score_text/font_unit/addr_reg_reg/ENARDEN (net: game_graph_an_unit/score_text/font_unit/addr_reg_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (vsync_unit/h_count_reg_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-Related violations: <none>
-
-REQP-1840#9 Warning
-RAMB18 async control check  
-The RAMB18E1 game_graph_an_unit/score_text/font_unit/addr_reg_reg has an input control pin game_graph_an_unit/score_text/font_unit/addr_reg_reg/ENARDEN (net: game_graph_an_unit/score_text/font_unit/addr_reg_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (vsync_unit/h_count_reg_reg[8]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-Related violations: <none>
-
-REQP-1840#10 Warning
-RAMB18 async control check  
-The RAMB18E1 game_graph_an_unit/score_text/font_unit/addr_reg_reg has an input control pin game_graph_an_unit/score_text/font_unit/addr_reg_reg/ENARDEN (net: game_graph_an_unit/score_text/font_unit/addr_reg_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (vsync_unit/h_count_reg_reg[9]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
-Related violations: <none>
-
-REQP-1840#11 Warning
 RAMB18 async control check  
 The RAMB18E1 game_graph_an_unit/score_text/font_unit/addr_reg_reg has an input control pin game_graph_an_unit/score_text/font_unit/addr_reg_reg/ENARDEN (net: game_graph_an_unit/score_text/font_unit/addr_reg_reg_ENARDEN_cooolgate_en_sig_1) which is driven by a register (vsync_unit/mod2_reg_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>

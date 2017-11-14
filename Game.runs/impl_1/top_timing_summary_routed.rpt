@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Mon Nov 13 02:33:15 2017
+| Date         : Mon Nov 13 16:48:25 2017
 | Host         : XPS15-LAPTOP running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file top_timing_summary_routed.rpt -rpx top_timing_summary_routed.rpx
 | Design       : top
@@ -52,129 +52,29 @@ Table of Contents
 
 1. checking no_clock
 --------------------
- There are 129 register/latch pins with no clock driven by root clock pin: clk_generator/clk_reg_reg/Q (HIGH)
+ There are 132 register/latch pins with no clock driven by root clock pin: clk_generator/clk_reg_reg/Q (HIGH)
 
- There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[2]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: keyboard/d_state_reg_reg[0]/Q (HIGH)
 
- There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[3]/Q (HIGH)
+ There is 1 register/latch pin with no clock driven by root clock pin: keyboard/d_state_reg_reg[1]/Q (HIGH)
 
- There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[4]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[6]/Q (HIGH)
 
- There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[5]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[7]/Q (HIGH)
 
- There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[6]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[8]/Q (HIGH)
 
- There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[7]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[9]/Q (HIGH)
 
- There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[8]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[5]/Q (HIGH)
 
- There are 33 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/ball_y_reg_reg[9]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[6]/Q (HIGH)
 
- There are 32 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/counter_logic_reg[0]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[7]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[0]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[8]/Q (HIGH)
 
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[10]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[11]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[12]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[13]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[14]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[15]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[16]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[17]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[18]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[19]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[1]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[20]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[21]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[22]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[23]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[24]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[25]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[26]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[27]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[28]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[29]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[2]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[30]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[31]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[3]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[4]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[5]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[6]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[7]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[8]/Q (HIGH)
-
- There are 8 register/latch pins with no clock driven by root clock pin: game_graph_an_unit/mcounter_reg[9]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[0]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[1]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[2]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[3]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[4]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[5]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[6]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[7]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[8]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/h_count_reg_reg[9]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[0]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[1]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[2]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[3]/Q (HIGH)
-
- There are 33 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[4]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[5]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[6]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[7]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[8]/Q (HIGH)
-
- There are 45 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[9]/Q (HIGH)
+ There are 8 register/latch pins with no clock driven by root clock pin: vsync_unit/v_count_reg_reg[9]/Q (HIGH)
 
 
 2. checking constant_clock
@@ -189,7 +89,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 415 pins that are not constrained for maximum delay. (HIGH)
+ There are 375 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -237,7 +137,7 @@ Table of Contents
 
 12. checking latch_loops
 ------------------------
- There are 13 combinational latch loops in the design through latch input (HIGH)
+ There are 0 combinational latch loops in the design through latch input
 
 
 
@@ -248,7 +148,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      6.529        0.000                      0                    1        1.102        0.000                      0                    1        4.500        0.000                       0                     2  
+      6.382        0.000                      0                    1        1.228        0.000                      0                    1        4.500        0.000                       0                     2  
 
 
 All user specified timing constraints are met.
@@ -271,7 +171,7 @@ sys_clk_pin  {0.000 5.000}      10.000          100.000
 
 Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-sys_clk_pin         6.529        0.000                      0                    1        1.102        0.000                      0                    1        4.500        0.000                       0                     2  
+sys_clk_pin         6.382        0.000                      0                    1        1.228        0.000                      0                    1        4.500        0.000                       0                     2  
 
 
 ------------------------------------------------------------------------------------------------
@@ -302,15 +202,15 @@ Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing 
 From Clock:  sys_clk_pin
   To Clock:  sys_clk_pin
 
-Setup :            0  Failing Endpoints,  Worst Slack        6.529ns,  Total Violation        0.000ns
-Hold  :            0  Failing Endpoints,  Worst Slack        1.102ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack        6.382ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        1.228ns,  Total Violation        0.000ns
 PW    :            0  Failing Endpoints,  Worst Slack        4.500ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             6.529ns  (required time - arrival time)
+Slack (MET) :             6.382ns  (required time - arrival time)
   Source:                 clk_generator/clk_reg_reg/C
                             (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clk_generator/clk_reg_reg/D
@@ -318,11 +218,11 @@ Slack (MET) :             6.529ns  (required time - arrival time)
   Path Group:             sys_clk_pin
   Path Type:              Setup (Max at Slow Process Corner)
   Requirement:            10.000ns  (sys_clk_pin rise@10.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        3.465ns  (logic 0.676ns (19.511%)  route 2.789ns (80.489%))
+  Data Path Delay:        3.660ns  (logic 0.738ns (20.163%)  route 2.922ns (79.837%))
   Logic Levels:           2  (BUFG=1 LUT1=1)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    4.927ns = ( 14.927 - 10.000 ) 
-    Source Clock Delay      (SCD):    5.228ns
+    Destination Clock Delay (DCD):    4.934ns = ( 14.934 - 10.000 ) 
+    Source Clock Delay      (SCD):    5.235ns
     Clock Pessimism Removal (CPR):    0.301ns
   Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
@@ -339,16 +239,16 @@ Slack (MET) :             6.529ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.482     1.482 r  clk_IBUF_inst/O
                          net (fo=1, routed)           2.025     3.506    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.096     3.602 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1, routed)           1.625     5.228    clk_generator/clk_IBUF_BUFG
-    SLICE_X52Y96         FDCE                                         r  clk_generator/clk_reg_reg/C
+                         net (fo=1, routed)           1.632     5.235    clk_generator/clk_IBUF_BUFG
+    SLICE_X62Y96         FDCE                                         r  clk_generator/clk_reg_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X52Y96         FDCE (Prop_fdce_C_Q)         0.456     5.684 f  clk_generator/clk_reg_reg/Q
-                         net (fo=1, routed)           0.725     6.408    clk_50m
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     6.504 f  clk_50m_BUFG_inst/O
-                         net (fo=130, routed)         2.064     8.568    clk_generator/CLK
-    SLICE_X52Y96         LUT1 (Prop_lut1_I0_O)        0.124     8.692 r  clk_generator/clk_reg_i_1/O
-                         net (fo=1, routed)           0.000     8.692    clk_generator/clk_next
-    SLICE_X52Y96         FDCE                                         r  clk_generator/clk_reg_reg/D
+    SLICE_X62Y96         FDCE (Prop_fdce_C_Q)         0.518     5.753 f  clk_generator/clk_reg_reg/Q
+                         net (fo=1, routed)           1.130     6.883    clk_50m
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     6.979 f  clk_50m_BUFG_inst/O
+                         net (fo=133, routed)         1.792     8.771    clk_generator/CLK
+    SLICE_X62Y96         LUT1 (Prop_lut1_I0_O)        0.124     8.895 r  clk_generator/clk_reg_i_1/O
+                         net (fo=1, routed)           0.000     8.895    clk_generator/clk_next
+    SLICE_X62Y96         FDCE                                         r  clk_generator/clk_reg_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -358,16 +258,16 @@ Slack (MET) :             6.529ns  (required time - arrival time)
     E3                   IBUF (Prop_ibuf_I_O)         1.411    11.411 r  clk_IBUF_inst/O
                          net (fo=1, routed)           1.920    13.331    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    13.422 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1, routed)           1.504    14.927    clk_generator/clk_IBUF_BUFG
-    SLICE_X52Y96         FDCE                                         r  clk_generator/clk_reg_reg/C
-                         clock pessimism              0.301    15.228    
-                         clock uncertainty           -0.035    15.192    
-    SLICE_X52Y96         FDCE (Setup_fdce_C_D)        0.029    15.221    clk_generator/clk_reg_reg
+                         net (fo=1, routed)           1.511    14.934    clk_generator/clk_IBUF_BUFG
+    SLICE_X62Y96         FDCE                                         r  clk_generator/clk_reg_reg/C
+                         clock pessimism              0.301    15.235    
+                         clock uncertainty           -0.035    15.199    
+    SLICE_X62Y96         FDCE (Setup_fdce_C_D)        0.077    15.276    clk_generator/clk_reg_reg
   -------------------------------------------------------------------
-                         required time                         15.221    
-                         arrival time                          -8.692    
+                         required time                         15.276    
+                         arrival time                          -8.895    
   -------------------------------------------------------------------
-                         slack                                  6.529    
+                         slack                                  6.382    
 
 
 
@@ -375,7 +275,7 @@ Slack (MET) :             6.529ns  (required time - arrival time)
 
 Min Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             1.102ns  (arrival time - required time)
+Slack (MET) :             1.228ns  (arrival time - required time)
   Source:                 clk_generator/clk_reg_reg/C
                             (rising edge-triggered cell FDCE clocked by sys_clk_pin  {rise@0.000ns fall@5.000ns period=10.000ns})
   Destination:            clk_generator/clk_reg_reg/D
@@ -383,12 +283,12 @@ Slack (MET) :             1.102ns  (arrival time - required time)
   Path Group:             sys_clk_pin
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (sys_clk_pin rise@0.000ns - sys_clk_pin rise@0.000ns)
-  Data Path Delay:        1.193ns  (logic 0.212ns (17.771%)  route 0.981ns (82.229%))
+  Data Path Delay:        1.348ns  (logic 0.235ns (17.430%)  route 1.113ns (82.570%))
   Logic Levels:           2  (BUFG=1 LUT1=1)
   Clock Path Skew:        0.000ns (DCD - SCD - CPR)
-    Destination Clock Delay (DCD):    1.999ns
-    Source Clock Delay      (SCD):    1.483ns
-    Clock Pessimism Removal (CPR):    0.515ns
+    Destination Clock Delay (DCD):    2.004ns
+    Source Clock Delay      (SCD):    1.487ns
+    Clock Pessimism Removal (CPR):    0.516ns
 
     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
   -------------------------------------------------------------------    -------------------
@@ -399,16 +299,16 @@ Slack (MET) :             1.102ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.250     0.250 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.644     0.894    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.920 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1, routed)           0.564     1.483    clk_generator/clk_IBUF_BUFG
-    SLICE_X52Y96         FDCE                                         r  clk_generator/clk_reg_reg/C
+                         net (fo=1, routed)           0.568     1.487    clk_generator/clk_IBUF_BUFG
+    SLICE_X62Y96         FDCE                                         r  clk_generator/clk_reg_reg/C
   -------------------------------------------------------------------    -------------------
-    SLICE_X52Y96         FDCE (Prop_fdce_C_Q)         0.141     1.624 f  clk_generator/clk_reg_reg/Q
-                         net (fo=1, routed)           0.271     1.895    clk_50m
-    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     1.921 f  clk_50m_BUFG_inst/O
-                         net (fo=130, routed)         0.710     2.631    clk_generator/CLK
-    SLICE_X52Y96         LUT1 (Prop_lut1_I0_O)        0.045     2.676 r  clk_generator/clk_reg_i_1/O
-                         net (fo=1, routed)           0.000     2.676    clk_generator/clk_next
-    SLICE_X52Y96         FDCE                                         r  clk_generator/clk_reg_reg/D
+    SLICE_X62Y96         FDCE (Prop_fdce_C_Q)         0.164     1.651 f  clk_generator/clk_reg_reg/Q
+                         net (fo=1, routed)           0.489     2.140    clk_50m
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     2.166 f  clk_50m_BUFG_inst/O
+                         net (fo=133, routed)         0.624     2.791    clk_generator/CLK
+    SLICE_X62Y96         LUT1 (Prop_lut1_I0_O)        0.045     2.836 r  clk_generator/clk_reg_i_1/O
+                         net (fo=1, routed)           0.000     2.836    clk_generator/clk_next
+    SLICE_X62Y96         FDCE                                         r  clk_generator/clk_reg_reg/D
   -------------------------------------------------------------------    -------------------
 
                          (clock sys_clk_pin rise edge)
@@ -418,15 +318,15 @@ Slack (MET) :             1.102ns  (arrival time - required time)
     E3                   IBUF (Prop_ibuf_I_O)         0.438     0.438 r  clk_IBUF_inst/O
                          net (fo=1, routed)           0.699     1.136    clk_IBUF
     BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     1.165 r  clk_IBUF_BUFG_inst/O
-                         net (fo=1, routed)           0.834     1.999    clk_generator/clk_IBUF_BUFG
-    SLICE_X52Y96         FDCE                                         r  clk_generator/clk_reg_reg/C
-                         clock pessimism             -0.515     1.483    
-    SLICE_X52Y96         FDCE (Hold_fdce_C_D)         0.091     1.574    clk_generator/clk_reg_reg
+                         net (fo=1, routed)           0.839     2.004    clk_generator/clk_IBUF_BUFG
+    SLICE_X62Y96         FDCE                                         r  clk_generator/clk_reg_reg/C
+                         clock pessimism             -0.516     1.487    
+    SLICE_X62Y96         FDCE (Hold_fdce_C_D)         0.120     1.607    clk_generator/clk_reg_reg
   -------------------------------------------------------------------
-                         required time                         -1.574    
-                         arrival time                           2.676    
+                         required time                         -1.607    
+                         arrival time                           2.836    
   -------------------------------------------------------------------
-                         slack                                  1.102    
+                         slack                                  1.228    
 
 
 
@@ -441,11 +341,11 @@ Sources:            { clk }
 
 Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
 Min Period        n/a     BUFG/I   n/a            2.155         10.000      7.845      BUFGCTRL_X0Y16  clk_IBUF_BUFG_inst/I
-Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X52Y96    clk_generator/clk_reg_reg/C
-Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X52Y96    clk_generator/clk_reg_reg/C
-Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X52Y96    clk_generator/clk_reg_reg/C
-High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X52Y96    clk_generator/clk_reg_reg/C
-High Pulse Width  Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X52Y96    clk_generator/clk_reg_reg/C
+Min Period        n/a     FDCE/C   n/a            1.000         10.000      9.000      SLICE_X62Y96    clk_generator/clk_reg_reg/C
+Low Pulse Width   Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X62Y96    clk_generator/clk_reg_reg/C
+Low Pulse Width   Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X62Y96    clk_generator/clk_reg_reg/C
+High Pulse Width  Slow    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X62Y96    clk_generator/clk_reg_reg/C
+High Pulse Width  Fast    FDCE/C   n/a            0.500         5.000       4.500      SLICE_X62Y96    clk_generator/clk_reg_reg/C
 
 
 

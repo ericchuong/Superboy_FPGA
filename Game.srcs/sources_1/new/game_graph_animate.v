@@ -42,7 +42,7 @@ module game_graph_animate
       localparam WALL_Y_T = 0;
       localparam WALL_Y_B = 100;
       
-      localparam WALL2_Y_T = 200;
+      localparam WALL2_Y_T = WALL_Y_B + 100;
       localparam WALL2_Y_B = 450;
       
       localparam WALL_X_SIZE = 50;
@@ -55,7 +55,7 @@ module game_graph_animate
       localparam WALL3_Y_T = 0;
       localparam WALL3_Y_B = 225;
       
-      localparam WALL4_Y_T = 325;
+      localparam WALL4_Y_T = WALL3_Y_B + 100;
       localparam WALL4_Y_B = 450;
             
       wire [9:0] wall3_x_l, wall3_x_r, wall4_x_l, wall4_x_r;
@@ -87,13 +87,14 @@ module game_graph_animate
       wire [9:0] ball_y_t, ball_y_b;
       // reg to track left, top position
       reg [9:0] ball_x_reg, ball_y_reg;
-      wire [9:0] ball_x_next, ball_y_next;
+      wire [9:0] ball_x_next;
+      reg [9:0] ball_y_next;
       // reg to track ball speed
       reg [9:0] x_delta_reg, x_delta_next;
       reg [9:0] y_delta_reg, y_delta_next;
       // ball velocity can be pos or neg)
-      localparam BALL_V_P = 4;
-      localparam BALL_V_N = -4;
+      localparam BALL_V_P = 2;
+      localparam BALL_V_N = -2;
       //--------------------------------------------
       // round ball
       //--------------------------------------------
@@ -148,7 +149,8 @@ module game_graph_animate
       wire [2:0] cloud1_rgb, cloud2_rgb, cloud3_rgb;
             
       integer mcounter = 0;
-      integer counter_logic = 0;
+      integer counter_logic = 1;
+      integer counter_logic2 = 1;
       reg [3:0]dig1;
       reg [3:0]dig0;
       // body
@@ -344,9 +346,10 @@ module game_graph_animate
                wall3_x_reg <= 100;
                wall4_x_reg <= 100;               
                ball_x_reg <= 100;
-               ball_y_reg <= 0;
+               ball_y_reg <= 100;
                x_delta_reg <= 10'h004;
                y_delta_reg <= 10'h004;
+               mcounter = 0;
             end
          else
             begin
@@ -424,7 +427,7 @@ module game_graph_animate
       
       always @*
       begin
-      //         bar_y_next = bar_y_reg; // no move
+         ball_y_next = ball_y_reg;
          if (refr_tick)
          begin
 //            if (button && (bar_y_b < (MAX_Y-1-BAR_V))) 
@@ -432,6 +435,10 @@ module game_graph_animate
             
 //            else if (button && (bar_y_t > BAR_V))
 //               bar_y_next = bar_y_reg - BAR_V; // move left
+            if (button && (ball_y_t > BALL_V_P))
+               ball_y_next = ball_y_reg - BALL_V_P;
+            else if (ball_y_b < GROUND_Y_T)
+               ball_y_next = ball_y_reg + BALL_V_P;
          end
       end
    
@@ -456,26 +463,27 @@ module game_graph_animate
       // ball rgb output
       assign ball_rgb = 3'b000;   // black?
       // new ball position
-      assign ball_x_next = (refr_tick) ? ball_x_reg+x_delta_reg :
-                           ball_x_reg ;
-      assign ball_y_next = (refr_tick) ? ball_y_reg+y_delta_reg :
-                           ball_y_reg ;
+//      always @*
+//      begin
+//         ball_x_next = (refr_tick) ? ball_x_reg+x_delta_reg :
+//                        ball_x_reg ;
+//         ball_y_next = (refr_tick) ? ball_y_reg+y_delta_reg :
+//                        ball_y_reg ;
+//      end
       // new ball velocity
-      
       always @*
       begin
          x_delta_next = x_delta_reg;
          y_delta_next = y_delta_reg;
-         if (ball_x_l < 1) // reach left
-            x_delta_next = BALL_V_P;
-         else if (ball_x_r > (MAX_X-1)) // reach right
-            x_delta_next = BALL_V_N;
-         else if (ball_y_b > 450 ) // if you hit the ground
-            y_delta_next = BALL_V_N;    // bounce back temporarily
-         else if (ball_y_t < 1)  // if you hit the top
-            y_delta_next = BALL_V_P;    // boune back temporarily
-         
-      end
+//         if (ball_x_l < 1) // reach left
+//            x_delta_next = BALL_V_P;
+//         if (ball_x_r > (MAX_X-1)) // reach right
+//            x_delta_next = BALL_V_N;
+         if (ball_y_b <= GROUND_Y_T) // if you hit the ground
+            y_delta_next = 0;    // stop moving
+         else if (ball_y_t < 2)  // if you hit the top
+            y_delta_next = BALL_V_P;    // stop moving
+         end
    
       //--------------------------------------------   
       // clouds
@@ -535,13 +543,25 @@ module game_graph_animate
       //--------------------------------------------
       always@* 
       begin
-         if ((ball_y_t == 460) && (counter_logic == 1) && refr_tick)// ball falls below bar
+         if ( refr_tick && (counter_logic == 1) &&
+          ((wall_x_l == 2) && (wall_x_r == 51) )) // if a wall1 hits the left screen
          begin
             mcounter = (mcounter + counter_logic);
             counter_logic = 0;
-         end 
-         else if ((ball_y_t == 200)&& (counter_logic == 0) && refr_tick)
+         end
+         
+         else if ( refr_tick && (counter_logic2 == 1) &&
+          ((wall3_x_l == 2) && (wall3_x_r == 51) ))
+         begin
+            mcounter = (mcounter + counter_logic2);
+            counter_logic2 = 0;
+         end
+         
+         else if (refr_tick && (wall_x_l == 550))
             counter_logic = 1;
+            
+         else if (refr_tick && (wall3_x_l == 550))
+            counter_logic2 = 1;
       end
       
       always@*

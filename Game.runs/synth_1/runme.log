@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 832 
+INFO: Helper process launched with PID 6700 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 349.301 ; gain = 80.168
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 348.809 ; gain = 79.402
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/top.v:23]
 INFO: [Synth 8-638] synthesizing module 'clk_50m_generator' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/clk_50m_generator.v:23]
@@ -98,13 +98,13 @@ INFO: [Synth 8-638] synthesizing module 'game_graph_animate' [C:/Users/Admin/Doc
 	Parameter GROUND_Y_T bound to: 450 - type: integer 
 	Parameter GROUND_Y_B bound to: 480 - type: integer 
 	Parameter BALL_SIZE bound to: 32 - type: integer 
-	Parameter BALL_V_P bound to: 4 - type: integer 
-	Parameter BALL_V_N bound to: -4 - type: integer 
+	Parameter BALL_V_P bound to: 2 - type: integer 
+	Parameter BALL_V_N bound to: -2 - type: integer 
 	Parameter CLOUD1_SIZE bound to: 32 - type: integer 
 	Parameter CLOUD2_SIZE bound to: 32 - type: integer 
 	Parameter CLOUD3_SIZE bound to: 64 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:548]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:562]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:568]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:582]
 INFO: [Synth 8-638] synthesizing module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:22]
 INFO: [Synth 8-638] synthesizing module 'font_rom' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/font_rom.v:8]
 INFO: [Synth 8-256] done synthesizing module 'font_rom' (10#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/font_rom.v:8]
@@ -113,19 +113,20 @@ WARNING: [Synth 8-6014] Unused sequential element char_addr_l_reg was removed.  
 WARNING: [Synth 8-6014] Unused sequential element char_addr_r_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:108]
 WARNING: [Synth 8-6014] Unused sequential element char_addr_o_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:187]
 INFO: [Synth 8-256] done synthesizing module 'pong_text' (11#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:22]
-WARNING: [Synth 8-689] width (1) of port connection 'text_on' does not match port width (4) of module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:578]
-WARNING: [Synth 8-689] width (1) of port connection 'text_rgb' does not match port width (3) of module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:578]
-WARNING: [Synth 8-6014] Unused sequential element x_delta_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:348]
-WARNING: [Synth 8-6014] Unused sequential element x_delta_next_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:467]
-WARNING: [Synth 8-3848] Net bar_rgb in module/entity game_graph_animate does not have driver. [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:144]
-WARNING: [Synth 8-3848] Net bar_on in module/entity game_graph_animate does not have driver. [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:143]
+WARNING: [Synth 8-689] width (1) of port connection 'text_on' does not match port width (4) of module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:598]
+WARNING: [Synth 8-689] width (1) of port connection 'text_rgb' does not match port width (3) of module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:598]
+WARNING: [Synth 8-6014] Unused sequential element x_delta_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:350]
+WARNING: [Synth 8-6014] Unused sequential element y_delta_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:351]
+WARNING: [Synth 8-6014] Unused sequential element x_delta_next_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:476]
+WARNING: [Synth 8-6014] Unused sequential element y_delta_next_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:477]
+WARNING: [Synth 8-3848] Net bar_rgb in module/entity game_graph_animate does not have driver. [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:145]
+WARNING: [Synth 8-3848] Net bar_on in module/entity game_graph_animate does not have driver. [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:144]
 INFO: [Synth 8-256] done synthesizing module 'game_graph_animate' (12#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:23]
 INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/top.v:23]
 WARNING: [Synth 8-3331] design pong_text has unconnected port pix_x[0]
 WARNING: [Synth 8-3331] design pong_text has unconnected port pix_y[0]
-WARNING: [Synth 8-3331] design game_graph_animate has unconnected port button
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 391.383 ; gain = 122.250
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 390.891 ; gain = 121.484
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -135,7 +136,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 391.383 ; gain = 122.250
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 390.891 ; gain = 121.484
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -151,22 +152,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 706.613 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 706.125 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 706.613 ; gain = 437.480
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 706.125 ; gain = 436.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 706.613 ; gain = 437.480
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 706.125 ; gain = 436.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 706.613 ; gain = 437.480
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 706.125 ; gain = 436.719
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element v_count_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/vga_sync.v:59]
 WARNING: [Synth 8-6014] Unused sequential element h_count_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/vga_sync.v:60]
@@ -188,23 +189,24 @@ INFO: [Synth 8-5546] ROM "d_state_next" won't be mapped to RAM because it is too
 WARNING: [Synth 8-6014] Unused sequential element addr_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/font_rom.v:20]
 INFO: [Synth 8-5545] ROM "dig0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "dig1" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-WARNING: [Synth 8-6014] Unused sequential element wall_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:342]
-WARNING: [Synth 8-6014] Unused sequential element wall2_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:343]
-WARNING: [Synth 8-6014] Unused sequential element wall3_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:344]
-WARNING: [Synth 8-6014] Unused sequential element wall4_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:345]
-WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:347]
-WARNING: [Synth 8-6014] Unused sequential element wall2_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:343]
-WARNING: [Synth 8-6014] Unused sequential element wall4_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:345]
+WARNING: [Synth 8-6014] Unused sequential element wall_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:344]
+WARNING: [Synth 8-6014] Unused sequential element wall2_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:345]
+WARNING: [Synth 8-6014] Unused sequential element wall3_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:346]
+WARNING: [Synth 8-6014] Unused sequential element wall4_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:347]
+WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:349]
+WARNING: [Synth 8-6014] Unused sequential element wall2_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:345]
+WARNING: [Synth 8-6014] Unused sequential element wall4_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:347]
 WARNING: [Synth 8-327] inferring latch for variable 'button_press_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/kb_monitor.v:114]
 WARNING: [Synth 8-327] inferring latch for variable 'bit_addr_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:207]
 WARNING: [Synth 8-327] inferring latch for variable 'row_addr_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:206]
 WARNING: [Synth 8-327] inferring latch for variable 'char_addr_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:205]
-WARNING: [Synth 8-327] inferring latch for variable 'dig0_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:549]
-WARNING: [Synth 8-327] inferring latch for variable 'dig1_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:563]
-WARNING: [Synth 8-327] inferring latch for variable 'mcounter_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:540]
-WARNING: [Synth 8-327] inferring latch for variable 'counter_logic_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:538]
+WARNING: [Synth 8-327] inferring latch for variable 'dig0_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:569]
+WARNING: [Synth 8-327] inferring latch for variable 'dig1_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:583]
+WARNING: [Synth 8-327] inferring latch for variable 'mcounter_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:549]
+WARNING: [Synth 8-327] inferring latch for variable 'counter_logic_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:546]
+WARNING: [Synth 8-327] inferring latch for variable 'counter_logic2_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:553]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 706.613 ; gain = 437.480
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 706.125 ; gain = 436.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -228,7 +230,7 @@ Detailed RTL Component Info :
 	   2 Input      2 Bit       Adders := 4     
 +---Registers : 
 	               11 Bit    Registers := 2     
-	               10 Bit    Registers := 7     
+	               10 Bit    Registers := 6     
 	                8 Bit    Registers := 4     
 	                4 Bit    Registers := 3     
 	                3 Bit    Registers := 3     
@@ -253,7 +255,8 @@ Detailed RTL Component Info :
 	   3 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 4     
 	   5 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 15    
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
 	   3 Input      1 Bit        Muxes := 5     
 	   4 Input      1 Bit        Muxes := 30    
 	   5 Input      1 Bit        Muxes := 1     
@@ -387,11 +390,12 @@ Detailed RTL Component Info :
 	   2 Input      5 Bit       Adders := 2     
 	   3 Input      5 Bit       Adders := 2     
 +---Registers : 
-	               10 Bit    Registers := 5     
+	               10 Bit    Registers := 4     
 +---Muxes : 
 	   2 Input     32 Bit        Muxes := 3     
 	   2 Input      3 Bit        Muxes := 11    
-	   2 Input      1 Bit        Muxes := 4     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
 	  11 Input      1 Bit        Muxes := 2     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
@@ -409,19 +413,20 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element font_unit/addr_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/font_rom.v:20]
-WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:347]
-WARNING: [Synth 8-6014] Unused sequential element wall3_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:344]
-WARNING: [Synth 8-6014] Unused sequential element wall_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:342]
+WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:349]
+WARNING: [Synth 8-6014] Unused sequential element wall3_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:346]
+WARNING: [Synth 8-6014] Unused sequential element wall_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:344]
 INFO: [Synth 8-5546] ROM "keyboard/uart_unit/baud_gen_unit/max_tick" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "keyboard/d_state_next" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element vsync_unit/h_count_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/vga_sync.v:60]
 WARNING: [Synth 8-6014] Unused sequential element vsync_unit/v_count_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/vga_sync.v:59]
 WARNING: [Synth 8-3331] design pong_text has unconnected port pix_x[0]
 WARNING: [Synth 8-3331] design pong_text has unconnected port pix_y[0]
-WARNING: [Synth 8-3331] design game_graph_animate has unconnected port button
 WARNING: [Synth 8-6014] Unused sequential element keyboard/uart_unit/fifo_rx_unit/array_reg_reg was removed. 
 INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic_reg[1]' (LDC) to 'game_graph_an_unit/counter_logic_reg[31]'
 INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic_reg[2]' (LDC) to 'game_graph_an_unit/counter_logic_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[1]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[2]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
 INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic_reg[3]' (LDC) to 'game_graph_an_unit/counter_logic_reg[31]'
 INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic_reg[4]' (LDC) to 'game_graph_an_unit/counter_logic_reg[31]'
 INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic_reg[5]' (LDC) to 'game_graph_an_unit/counter_logic_reg[31]'
@@ -451,17 +456,38 @@ INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic_reg[28]'
 INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic_reg[29]' (LDC) to 'game_graph_an_unit/counter_logic_reg[31]'
 INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic_reg[30]' (LDC) to 'game_graph_an_unit/counter_logic_reg[31]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\counter_logic_reg[31] )
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[3]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[4]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[5]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[6]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[7]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[8]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[9]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[10]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[11]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[12]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[13]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[14]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[15]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[16]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[17]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[18]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[19]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[20]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[21]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[22]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[23]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[24]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[25]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[26]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[27]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[28]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[29]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/counter_logic2_reg[30]' (LD) to 'game_graph_an_unit/counter_logic2_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\counter_logic2_reg[31] )
 INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/score_text/char_addr_reg[4]' (LD) to 'game_graph_an_unit/score_text/char_addr_reg[5]'
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/score_text/\char_addr_reg[6] )
-INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/y_delta_reg_reg[0]' (FDCE) to 'game_graph_an_unit/y_delta_reg_reg[1]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\y_delta_reg_reg[1] )
-INFO: [Synth 8-3333] propagating constant 1 across sequential element (game_graph_an_unit/\y_delta_reg_reg[2] )
-INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/y_delta_reg_reg[3]' (FDCE) to 'game_graph_an_unit/y_delta_reg_reg[4]'
-INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/y_delta_reg_reg[4]' (FDCE) to 'game_graph_an_unit/y_delta_reg_reg[5]'
-INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/y_delta_reg_reg[5]' (FDCE) to 'game_graph_an_unit/y_delta_reg_reg[6]'
-INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/y_delta_reg_reg[6]' (FDCE) to 'game_graph_an_unit/y_delta_reg_reg[7]'
-INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/y_delta_reg_reg[7]' (FDCE) to 'game_graph_an_unit/y_delta_reg_reg[8]'
-INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/y_delta_reg_reg[8]' (FDCE) to 'game_graph_an_unit/y_delta_reg_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\keyboard/button_press_reg[1] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/wall_x_reg0_inferred/\wall_x_reg_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/wall3_x_reg0_inferred/\wall3_x_reg_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\ball_x_reg_reg[0] )
@@ -479,9 +505,171 @@ WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/fifo_rx_unit/r_pt
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/fifo_rx_unit/w_ptr_reg_reg[1]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/fifo_rx_unit/w_ptr_reg_reg[0]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (keyboard/button_press_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/button_press_reg[0]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (char_addr_reg[6]) is unused and will be removed from module pong_text.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[31]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[30]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[29]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[28]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[27]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[26]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[25]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[24]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[23]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[22]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[21]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[20]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[19]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[18]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[17]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[16]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[15]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[14]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[13]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[12]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[11]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[10]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[9]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[8]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[7]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[6]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[5]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[4]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[3]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[2]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[1]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[0]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[31]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[31]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[30]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[30]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[29]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[29]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[28]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[28]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[27]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[27]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[26]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[26]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[25]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[25]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[24]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[24]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[23]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[23]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[22]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[22]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[21]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[21]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[20]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[20]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[19]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[19]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[18]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[18]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[17]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[17]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[16]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[16]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[15]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[15]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[14]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[14]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[13]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[13]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[12]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[12]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[11]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[11]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[10]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[10]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[9]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[9]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[8]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[8]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[7]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[7]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[6]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[6]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[5]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[5]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[4]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[4]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[3]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[3]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[2]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[2]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[1]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[1]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+WARNING: [Synth 8-3332] Sequential element (mcounter_reg[0]__0) is unused and will be removed from module game_graph_animate.
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 1st driver pin 'game_graph_an_unit/mcounter_reg[0]__0/Q' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net Q with 2nd driver pin 'GND' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
+CRITICAL WARNING: [Synth 8-5559] multi-driven net Q is connected to constant driver, other driver is ignored [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:352]
 WARNING: [Synth 8-3332] Sequential element (counter_logic_reg[31]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (counter_logic_reg[0]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (counter_logic2_reg[31]) is unused and will be removed from module game_graph_animate.
+WARNING: [Synth 8-3332] Sequential element (counter_logic2_reg[0]) is unused and will be removed from module game_graph_animate.
 WARNING: [Synth 8-3332] Sequential element (ball_x_reg_reg[9]) is unused and will be removed from module game_graph_animate.
 WARNING: [Synth 8-3332] Sequential element (ball_x_reg_reg[8]) is unused and will be removed from module game_graph_animate.
 WARNING: [Synth 8-3332] Sequential element (ball_x_reg_reg[7]) is unused and will be removed from module game_graph_animate.
@@ -492,14 +680,9 @@ WARNING: [Synth 8-3332] Sequential element (ball_x_reg_reg[3]) is unused and wil
 WARNING: [Synth 8-3332] Sequential element (ball_x_reg_reg[2]) is unused and will be removed from module game_graph_animate.
 WARNING: [Synth 8-3332] Sequential element (ball_x_reg_reg[1]) is unused and will be removed from module game_graph_animate.
 WARNING: [Synth 8-3332] Sequential element (ball_x_reg_reg[0]) is unused and will be removed from module game_graph_animate.
-WARNING: [Synth 8-3332] Sequential element (y_delta_reg_reg[2]) is unused and will be removed from module game_graph_animate.
-WARNING: [Synth 8-3332] Sequential element (y_delta_reg_reg[1]) is unused and will be removed from module game_graph_animate.
-WARNING: [Synth 8-3332] Sequential element (ball_y_reg_reg[1]) is unused and will be removed from module game_graph_animate.
 WARNING: [Synth 8-3332] Sequential element (wall3_x_reg_reg[0]) is unused and will be removed from module game_graph_animate.
 WARNING: [Synth 8-3332] Sequential element (wall_x_reg_reg[0]) is unused and will be removed from module game_graph_animate.
 WARNING: [Synth 8-3332] Sequential element (keyboard/ps2_rx_unit/b_reg_reg[0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/d_state_reg_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/d_state_reg_reg[0]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/s_reg_reg[3]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/s_reg_reg[2]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/s_reg_reg[1]) is unused and will be removed from module top.
@@ -513,16 +696,20 @@ WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_re
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_reg_reg[6]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_reg_reg[5]) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_reg_reg[4]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_reg_reg[3]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_reg_reg[2]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_reg_reg[1]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_reg_reg[0]) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/fifo_rx_unit/empty_reg_reg) is unused and will be removed from module top.
-WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/fifo_rx_unit/full_reg_reg) is unused and will be removed from module top.
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/ball_y_reg0_inferred/\ball_y_reg_reg[0] )
-WARNING: [Synth 8-3332] Sequential element (ball_y_reg_reg[0]) is unused and will be removed from module game_graph_animate.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\dig1_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\dig1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\dig1_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\dig1_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\dig0_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\dig0_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/\dig0_reg[3] )
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/score_text/char_addr_reg[0]' (LD) to 'game_graph_an_unit/score_text/char_addr_reg[3]'
+INFO: [Synth 8-3886] merging instance 'game_graph_an_unit/score_text/char_addr_reg[1]' (LD) to 'game_graph_an_unit/score_text/char_addr_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/score_text/\char_addr_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (game_graph_an_unit/score_text/\char_addr_reg[2] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 706.613 ; gain = 437.480
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 706.125 ; gain = 436.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -564,13 +751,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 706.613 ; gain = 437.480
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 706.125 ; gain = 436.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 706.613 ; gain = 437.480
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 706.125 ; gain = 436.719
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -583,7 +770,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4480] The timing for the instance game_graph_an_unit/score_text/font_unit/addr_reg_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 719.039 ; gain = 449.906
+Finished Technology Mapping : Time (s): cpu = 00:00:39 ; elapsed = 00:00:40 . Memory (MB): peak = 709.898 ; gain = 440.492
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -607,7 +794,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 719.039 ; gain = 449.906
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 709.898 ; gain = 440.492
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -620,7 +807,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 719.039 ; gain = 449.906
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 709.898 ; gain = 440.492
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -632,25 +819,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 719.039 ; gain = 449.906
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 709.898 ; gain = 440.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 719.039 ; gain = 449.906
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 709.898 ; gain = 440.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 719.039 ; gain = 449.906
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 709.898 ; gain = 440.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 719.039 ; gain = 449.906
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 709.898 ; gain = 440.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -666,64 +853,62 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |BUFG     |     3|
-|2     |CARRY4   |   185|
-|3     |LUT1     |   108|
-|4     |LUT2     |   115|
-|5     |LUT3     |   227|
-|6     |LUT4     |   269|
-|7     |LUT5     |   148|
-|8     |LUT6     |   577|
-|9     |MUXF7    |    17|
+|1     |BUFG     |     2|
+|2     |CARRY4   |    19|
+|3     |LUT1     |     9|
+|4     |LUT2     |    52|
+|5     |LUT3     |    44|
+|6     |LUT4     |    87|
+|7     |LUT5     |    94|
+|8     |LUT6     |   190|
+|9     |MUXF7    |    13|
 |10    |MUXF8    |     5|
 |11    |RAM32M   |     2|
 |12    |RAMB18E1 |     1|
 |13    |FDCE     |   103|
-|14    |FDPE     |     7|
+|14    |FDPE     |    10|
 |15    |FDRE     |     3|
-|16    |LD       |    52|
-|17    |LDC      |     1|
-|18    |IBUF     |     4|
-|19    |OBUF     |     6|
+|16    |LD       |     9|
+|17    |IBUF     |     4|
+|18    |OBUF     |     6|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+---------------------+-------------------+------+
 |      |Instance             |Module             |Cells |
 +------+---------------------+-------------------+------+
-|1     |top                  |                   |  1833|
+|1     |top                  |                   |   653|
 |2     |  clk_generator      |clk_50m_generator  |     2|
-|3     |  game_graph_an_unit |game_graph_animate |  1243|
-|4     |    score_text       |pong_text          |    16|
+|3     |  game_graph_an_unit |game_graph_animate |   132|
+|4     |    score_text       |pong_text          |    12|
 |5     |      font_unit      |font_rom           |     4|
-|6     |  keyboard           |kb_monitor         |   139|
-|7     |    ps2_rx_unit      |ps2_rx             |    51|
-|8     |    uart_unit        |uart               |    84|
-|9     |      baud_gen_unit  |mod_m_counter      |    21|
-|10    |      fifo_tx_unit   |fifo               |    19|
-|11    |      uart_tx_unit   |uart_tx            |    44|
-|12    |  vsync_unit         |vga_sync           |   366|
+|6     |  keyboard           |kb_monitor         |   149|
+|7     |    ps2_rx_unit      |ps2_rx             |    55|
+|8     |    uart_unit        |uart               |    83|
+|9     |      baud_gen_unit  |mod_m_counter      |    22|
+|10    |      fifo_tx_unit   |fifo               |    18|
+|11    |      uart_tx_unit   |uart_tx            |    43|
+|12    |  vsync_unit         |vga_sync           |   355|
 +------+---------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 719.039 ; gain = 449.906
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 709.898 ; gain = 440.492
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 74 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 719.039 ; gain = 134.676
-Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 719.039 ; gain = 449.906
+Synthesis finished with 0 errors, 96 critical warnings and 144 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 709.898 ; gain = 125.258
+Synthesis Optimization Complete : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 709.898 ; gain = 440.492
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 245 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 35 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 55 instances were transformed.
-  LD => LDCE: 52 instances
-  LDC => LDCE: 1 instances
+  A total of 11 instances were transformed.
+  LD => LDCE: 9 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
 
-118 Infos, 88 Warnings, 0 Critical Warnings and 0 Errors encountered.
+152 Infos, 143 Warnings, 96 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 719.039 ; gain = 457.664
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 709.898 ; gain = 448.258
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Admin/Documents/Vivado/Game/Game.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.037 . Memory (MB): peak = 719.039 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 02:31:45 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 709.898 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 13 16:46:56 2017...
