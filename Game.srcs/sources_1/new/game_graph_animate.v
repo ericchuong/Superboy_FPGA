@@ -26,7 +26,8 @@ module game_graph_animate
     input wire video_on,
     input wire [9:0] pix_x, pix_y,
     input wire button,
-    output reg [2:0] graph_rgb
+    output reg [2:0] graph_rgb,
+    output reg sound_on
    );
 
       // constant and signal declaration
@@ -67,15 +68,6 @@ module game_graph_animate
       localparam GROUND_Y_T = 450;
       localparam GROUND_Y_B = 480;
       // bar top, bottom boundary
-//      localparam BAR_X_L = 30;
-//      localparam BAR_X_R = 38;
-      // bar left, right boundary
-//      wire [9:0] bar_y_t, bar_y_b;
-//      localparam BAR_Y_SIZE = 72;
-      // register to track right boundary  (y position is fixed)
-//      reg [9:0] bar_y_reg, bar_y_next;
-      // bar moving velocity when a button is pressed
-//      localparam BAR_V = 4;
       
       //--------------------------------------------
       // square ball
@@ -148,7 +140,6 @@ module game_graph_animate
       wire sq_cloud1_on, rd_cloud1_on, sq_cloud2_on, rd_cloud2_on, sq_cloud3_on, rd_cloud3_on;
       wire [2:0] cloud1_rgb, cloud2_rgb, cloud3_rgb;
             
-//      integer mcounter = 0;
       integer counter_logic = 0;
       integer counter_logic2 = 0;
       wire [3:0] dig1, dig0;
@@ -340,7 +331,6 @@ module game_graph_animate
       always @(posedge clk, posedge reset)
          if (reset)
             begin
-//               bar_y_reg <= 0;
                wall_x_reg <= MAX_X; // 640
                wall2_x_reg <= MAX_X; // 640
                wall3_x_reg <= 100;
@@ -354,7 +344,6 @@ module game_graph_animate
             end
          else
             begin
-//               bar_y_reg <= bar_y_next;
                wall_x_reg <= wall_x_next;
                wall2_x_reg <= wall2_x_next;
                wall3_x_reg <= wall3_x_next;
@@ -410,15 +399,6 @@ module game_graph_animate
       // bottom horizontal bar
       //--------------------------------------------
       // boundary
-         
-//      assign bar_y_t = bar_y_reg;
-//      assign bar_y_b = bar_y_t + BAR_Y_SIZE - 1;
-      // pixel within bar
-//      assign bar_on = (BAR_X_L<=pix_x) && (pix_x<=BAR_X_R) &&
-//                      (bar_y_t<=pix_y) && (pix_y<=bar_y_b);
-      // bar rgb output
-//      assign bar_rgb = 3'b010; // green
-      // new bar x-position
       
       always @*
       begin
@@ -433,11 +413,6 @@ module game_graph_animate
          ball_y_next = ball_y_reg;
          if (refr_tick)
          begin
-//            if (button && (bar_y_b < (MAX_Y-1-BAR_V))) 
-//               bar_y_next = bar_y_reg + BAR_V; // move right
-            
-//            else if (button && (bar_y_t > BAR_V))
-//               bar_y_next = bar_y_reg - BAR_V; // move left
             if (button && (ball_y_t > BALL_V_P))
                ball_y_next = ball_y_reg - BALL_V_P;
             else if (ball_y_b < GROUND_Y_T)
@@ -466,22 +441,11 @@ module game_graph_animate
       // ball rgb output
       assign ball_rgb = 3'b000;   // black?
       // new ball position
-//      always @*
-//      begin
-//         ball_x_next = (refr_tick) ? ball_x_reg+x_delta_reg :
-//                        ball_x_reg ;
-//         ball_y_next = (refr_tick) ? ball_y_reg+y_delta_reg :
-//                        ball_y_reg ;
-//      end
       // new ball velocity
       always @*
       begin
          x_delta_next = x_delta_reg;
          y_delta_next = y_delta_reg;
-//         if (ball_x_l < 1) // reach left
-//            x_delta_next = BALL_V_P;
-//         if (ball_x_r > (MAX_X-1)) // reach right
-//            x_delta_next = BALL_V_N;
          if (ball_y_b <= GROUND_Y_T) // if you hit the ground
             y_delta_next = 0;    // stop moving
          else if (ball_y_t < 2)  // if you hit the top
@@ -547,9 +511,18 @@ module game_graph_animate
       
       always@*
       begin
+         if (((dig0_next != 0) || (dig1_next != 0)) && 
+          (((wall_x_r > 100) && (wall_x_l < 133)) || ((wall3_x_r > 100) && (wall3_x_l < 133)))
+            )
+            sound_on <= 1'b1;
+         else if (dig0_next == 0)
+            sound_on <= 1'b0;
+         else if ((wall_x_l > 133) || (wall3_x_l > 133))
+            sound_on <= 1'b0;
+        
          dig0_next = dig0_reg;
          dig1_next = dig1_reg;
-         
+        
          if ( (refr_tick && (wall_x_l == 132)) ||
            (refr_tick && (wall3_x_l == 132)) )
          begin

@@ -1,7 +1,7 @@
 Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2017.2 (win64) Build 1909853 Thu Jun 15 18:39:09 MDT 2017
-| Date         : Tue Nov 14 14:24:10 2017
+| Date         : Tue Nov 28 17:03:44 2017
 | Host         : XPS15-LAPTOP running 64-bit major release  (build 9200)
 | Command      : report_methodology -file top_methodology_drc_routed.rpt -rpx top_methodology_drc_routed.rpx
 | Design       : top
@@ -23,14 +23,14 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 155
+             Violations found: 188
 +-----------+----------+--------------------------------------------+------------+
 | Rule      | Severity | Description                                | Violations |
 +-----------+----------+--------------------------------------------+------------+
 | SYNTH-6   | Warning  | Timing of a block RAM might be sub-optimal | 1          |
-| TIMING-17 | Warning  | Non-clocked sequential cell                | 140        |
+| TIMING-17 | Warning  | Non-clocked sequential cell                | 172        |
 | TIMING-18 | Warning  | Missing input or output delay              | 1          |
-| TIMING-20 | Warning  | Non-clocked latch                          | 13         |
+| TIMING-20 | Warning  | Non-clocked latch                          | 14         |
 +-----------+----------+--------------------------------------------+------------+
 
 2. REPORT DETAILS
@@ -627,115 +627,275 @@ Related violations: <none>
 
 TIMING-17#118 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[0]/C is not reached by a timing clock
+The clock pin sound/count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#119 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[1]/C is not reached by a timing clock
+The clock pin sound/count_reg[10]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#120 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[2]/C is not reached by a timing clock
+The clock pin sound/count_reg[11]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#121 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[3]/C is not reached by a timing clock
+The clock pin sound/count_reg[12]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#122 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[4]/C is not reached by a timing clock
+The clock pin sound/count_reg[13]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#123 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[5]/C is not reached by a timing clock
+The clock pin sound/count_reg[14]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#124 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[6]/C is not reached by a timing clock
+The clock pin sound/count_reg[15]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#125 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[7]/C is not reached by a timing clock
+The clock pin sound/count_reg[16]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#126 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[8]/C is not reached by a timing clock
+The clock pin sound/count_reg[17]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#127 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_count_reg_reg[9]/C is not reached by a timing clock
+The clock pin sound/count_reg[18]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#128 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/h_sync_reg_reg/C is not reached by a timing clock
+The clock pin sound/count_reg[19]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#129 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/mod2_reg_reg/C is not reached by a timing clock
+The clock pin sound/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#130 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[0]/C is not reached by a timing clock
+The clock pin sound/count_reg[20]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#131 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[1]/C is not reached by a timing clock
+The clock pin sound/count_reg[21]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#132 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[2]/C is not reached by a timing clock
+The clock pin sound/count_reg[22]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#133 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[3]/C is not reached by a timing clock
+The clock pin sound/count_reg[23]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#134 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[4]/C is not reached by a timing clock
+The clock pin sound/count_reg[24]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#135 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[5]/C is not reached by a timing clock
+The clock pin sound/count_reg[25]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#136 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[6]/C is not reached by a timing clock
+The clock pin sound/count_reg[26]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#137 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[7]/C is not reached by a timing clock
+The clock pin sound/count_reg[27]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#138 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[8]/C is not reached by a timing clock
+The clock pin sound/count_reg[28]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#139 Warning
 Non-clocked sequential cell  
-The clock pin vsync_unit/v_count_reg_reg[9]/C is not reached by a timing clock
+The clock pin sound/count_reg[29]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#140 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#141 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[30]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#142 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[31]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#143 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#144 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#145 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#146 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#147 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#148 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#149 Warning
+Non-clocked sequential cell  
+The clock pin sound/count_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#150 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#151 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#152 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#153 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#154 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#155 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#156 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#157 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#158 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#159 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_count_reg_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#160 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/h_sync_reg_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#161 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/mod2_reg_reg/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#162 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[0]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#163 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[1]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#164 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[2]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#165 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[3]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#166 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[4]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#167 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[5]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#168 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[6]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#169 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[7]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#170 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[8]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#171 Warning
+Non-clocked sequential cell  
+The clock pin vsync_unit/v_count_reg_reg[9]/C is not reached by a timing clock
+Related violations: <none>
+
+TIMING-17#172 Warning
 Non-clocked sequential cell  
 The clock pin vsync_unit/v_sync_reg_reg/C is not reached by a timing clock
 Related violations: <none>
@@ -806,6 +966,11 @@ The latch game_graph_an_unit/score_text/row_addr_reg[3] cannot be properly analy
 Related violations: <none>
 
 TIMING-20#13 Warning
+Non-clocked latch  
+The latch game_graph_an_unit/sound_on_reg/L7 (in game_graph_an_unit/sound_on_reg macro) cannot be properly analyzed as its control pin game_graph_an_unit/sound_on_reg/L7/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
 Non-clocked latch  
 The latch keyboard/button_press_reg[0] cannot be properly analyzed as its control pin keyboard/button_press_reg[0]/G is not reached by a timing clock
 Related violations: <none>

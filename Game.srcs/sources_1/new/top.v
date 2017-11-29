@@ -25,17 +25,21 @@ module top(
     input wire ps2d, ps2c,
     output wire hsync, vsync,
     output wire [2:0] rgb,
-    output wire tx
+    output wire tx,
+    output wire audPWM,
+    output wire audSD
 );
 
-   wire [9:0] pixel_x, pixel_y;
-   wire video_on, pixel_tick;
-   reg [2:0] rgb_reg;
-   wire [2:0] rgb_next;
-   wire clk_50m;
-   wire button;
-   
-     
+    wire [9:0] pixel_x, pixel_y;
+    wire video_on, pixel_tick;
+    reg [2:0] rgb_reg;
+    wire [2:0] rgb_next;
+    wire clk_50m;
+    wire button;
+    reg [31:0] period;
+    wire sound_on;
+    assign audSD = 1'b1;
+      
     // body
     // 50MHz clock generator
     clk_50m_generator clk_generator
@@ -54,7 +58,18 @@ module top(
     game_graph_animate game_graph_an_unit
        (.clk(clk_50m), .reset(reset),
         .video_on(video_on), .pix_x(pixel_x),
-        .pix_y(pixel_y), .button(button), .graph_rgb(rgb_next)); 
+        .pix_y(pixel_y), .button(button), .graph_rgb(rgb_next),
+        .sound_on(sound_on)); 
+  
+    always@*
+    begin
+       if (sound_on == 1'b1)
+          period = 10000;
+       else if (sound_on == 1'b0)
+          period = 0;
+    end
+    
+    sound_gen sound(.clk(clk_50m), .period(period), .audPWM(audPWM));
   
     // rgb buffer
     always @(posedge clk_50m)

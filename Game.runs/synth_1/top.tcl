@@ -23,6 +23,7 @@ read_verilog -library xil_defaultlib {
   C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/mod_m_counter.v
   C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v
   C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/ps2_rx.v
+  C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/sound_gen.v
   C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/uart.v
   C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/uart_rx.v
   C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/uart_tx.v

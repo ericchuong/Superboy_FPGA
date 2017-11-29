@@ -14,9 +14,9 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t-csg324'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 12028 
+INFO: Helper process launched with PID 3404 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 348.785 ; gain = 79.223
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 348.836 ; gain = 79.930
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/top.v:23]
 INFO: [Synth 8-638] synthesizing module 'clk_50m_generator' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/clk_50m_generator.v:23]
@@ -111,20 +111,23 @@ WARNING: [Synth 8-6014] Unused sequential element char_addr_l_reg was removed.  
 WARNING: [Synth 8-6014] Unused sequential element char_addr_r_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:108]
 WARNING: [Synth 8-6014] Unused sequential element char_addr_o_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:187]
 INFO: [Synth 8-256] done synthesizing module 'pong_text' (11#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:22]
-WARNING: [Synth 8-689] width (1) of port connection 'text_on' does not match port width (4) of module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:598]
-WARNING: [Synth 8-689] width (1) of port connection 'text_rgb' does not match port width (3) of module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:598]
-WARNING: [Synth 8-6014] Unused sequential element x_delta_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:350]
-WARNING: [Synth 8-6014] Unused sequential element y_delta_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:351]
-WARNING: [Synth 8-6014] Unused sequential element x_delta_next_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:479]
-WARNING: [Synth 8-6014] Unused sequential element y_delta_next_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:480]
-WARNING: [Synth 8-3848] Net bar_rgb in module/entity game_graph_animate does not have driver. [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:145]
-WARNING: [Synth 8-3848] Net bar_on in module/entity game_graph_animate does not have driver. [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:144]
+WARNING: [Synth 8-689] width (1) of port connection 'text_on' does not match port width (4) of module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:571]
+WARNING: [Synth 8-689] width (1) of port connection 'text_rgb' does not match port width (3) of module 'pong_text' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:571]
+WARNING: [Synth 8-6014] Unused sequential element x_delta_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:340]
+WARNING: [Synth 8-6014] Unused sequential element y_delta_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:341]
+WARNING: [Synth 8-6014] Unused sequential element x_delta_next_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:447]
+WARNING: [Synth 8-6014] Unused sequential element y_delta_next_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:448]
+WARNING: [Synth 8-3848] Net bar_rgb in module/entity game_graph_animate does not have driver. [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:137]
+WARNING: [Synth 8-3848] Net bar_on in module/entity game_graph_animate does not have driver. [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:136]
 INFO: [Synth 8-256] done synthesizing module 'game_graph_animate' (12#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:23]
-INFO: [Synth 8-256] done synthesizing module 'top' (13#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/top.v:23]
+INFO: [Synth 8-638] synthesizing module 'sound_gen' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/sound_gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'sound_gen' (13#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/sound_gen.v:23]
+INFO: [Synth 8-256] done synthesizing module 'top' (14#1) [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/top.v:23]
+WARNING: [Synth 8-3917] design top has port audSD driven by constant 1
 WARNING: [Synth 8-3331] design pong_text has unconnected port pix_x[0]
 WARNING: [Synth 8-3331] design pong_text has unconnected port pix_y[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 391.867 ; gain = 122.305
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 390.918 ; gain = 122.012
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -134,7 +137,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 391.867 ; gain = 122.305
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 390.918 ; gain = 122.012
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -150,22 +153,22 @@ Completed Processing XDC Constraints
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 706.102 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 706.152 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 706.102 ; gain = 436.539
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 706.152 ; gain = 437.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 706.102 ; gain = 436.539
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 706.152 ; gain = 437.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 706.102 ; gain = 436.539
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 706.152 ; gain = 437.246
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element v_count_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/vga_sync.v:59]
 WARNING: [Synth 8-6014] Unused sequential element h_count_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/vga_sync.v:60]
@@ -185,20 +188,22 @@ INFO: [Synth 8-5544] ROM "button" won't be mapped to Block RAM because address s
 INFO: [Synth 8-5546] ROM "d_state_next" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "d_state_next" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element addr_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/font_rom.v:20]
-INFO: [Synth 8-5544] ROM "dig1_next" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-WARNING: [Synth 8-6014] Unused sequential element wall_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:344]
-WARNING: [Synth 8-6014] Unused sequential element wall2_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:345]
-WARNING: [Synth 8-6014] Unused sequential element wall3_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:346]
-WARNING: [Synth 8-6014] Unused sequential element wall4_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:347]
-WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:349]
-WARNING: [Synth 8-6014] Unused sequential element wall2_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:345]
-WARNING: [Synth 8-6014] Unused sequential element wall4_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:347]
+INFO: [Synth 8-5544] ROM "sound_on" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element wall_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:334]
+WARNING: [Synth 8-6014] Unused sequential element wall2_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:335]
+WARNING: [Synth 8-6014] Unused sequential element wall3_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:336]
+WARNING: [Synth 8-6014] Unused sequential element wall4_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:337]
+WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:339]
+WARNING: [Synth 8-6014] Unused sequential element wall2_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:335]
+WARNING: [Synth 8-6014] Unused sequential element wall4_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:337]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/sound_gen.v:32]
 WARNING: [Synth 8-327] inferring latch for variable 'button_press_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/kb_monitor.v:114]
 WARNING: [Synth 8-327] inferring latch for variable 'bit_addr_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:207]
 WARNING: [Synth 8-327] inferring latch for variable 'row_addr_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:206]
 WARNING: [Synth 8-327] inferring latch for variable 'char_addr_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/pong_text.v:205]
+WARNING: [Synth 8-327] inferring latch for variable 'sound_on_reg' [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:517]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 706.102 ; gain = 436.539
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 706.152 ; gain = 437.246
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -211,6 +216,7 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 	   2 Input     10 Bit       Adders := 11    
 	   2 Input      8 Bit       Adders := 1     
 	   2 Input      6 Bit       Adders := 1     
@@ -239,14 +245,14 @@ Detailed RTL Component Info :
 	  16 Input      7 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 2     
 	   5 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 8     
+	   2 Input      4 Bit        Muxes := 20    
 	   4 Input      3 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 11    
 	   3 Input      2 Bit        Muxes := 1     
 	   4 Input      2 Bit        Muxes := 4     
 	   5 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 15    
-	   3 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 5     
 	   4 Input      1 Bit        Muxes := 30    
 	   5 Input      1 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
@@ -381,10 +387,13 @@ Detailed RTL Component Info :
 	               10 Bit    Registers := 4     
 	                4 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 16    
 	   2 Input      3 Bit        Muxes := 11    
-	   2 Input      1 Bit        Muxes := 4     
-	   3 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module sound_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -401,13 +410,15 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-6014] Unused sequential element font_unit/addr_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/font_rom.v:20]
-WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:349]
-WARNING: [Synth 8-6014] Unused sequential element wall3_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:346]
-WARNING: [Synth 8-6014] Unused sequential element wall_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:344]
+WARNING: [Synth 8-6014] Unused sequential element ball_y_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:339]
+WARNING: [Synth 8-6014] Unused sequential element wall3_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:336]
+WARNING: [Synth 8-6014] Unused sequential element wall_x_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/game_graph_animate.v:334]
 INFO: [Synth 8-5546] ROM "keyboard/uart_unit/baud_gen_unit/max_tick" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5546] ROM "keyboard/d_state_next" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-6014] Unused sequential element vsync_unit/h_count_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/vga_sync.v:60]
 WARNING: [Synth 8-6014] Unused sequential element vsync_unit/v_count_reg_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/vga_sync.v:59]
+WARNING: [Synth 8-6014] Unused sequential element sound/count_reg was removed.  [C:/Users/Admin/Documents/Vivado/Game/Game.srcs/sources_1/new/sound_gen.v:32]
+WARNING: [Synth 8-3917] design top has port audSD driven by constant 1
 WARNING: [Synth 8-3331] design pong_text has unconnected port pix_x[0]
 WARNING: [Synth 8-3331] design pong_text has unconnected port pix_y[0]
 WARNING: [Synth 8-6014] Unused sequential element keyboard/uart_unit/fifo_rx_unit/array_reg_reg was removed. 
@@ -465,7 +476,7 @@ WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/uart_rx_unit/b_re
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/fifo_rx_unit/empty_reg_reg) is unused and will be removed from module top.
 WARNING: [Synth 8-3332] Sequential element (keyboard/uart_unit/fifo_rx_unit/full_reg_reg) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 706.102 ; gain = 436.539
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 706.152 ; gain = 437.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -507,13 +518,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 706.102 ; gain = 436.539
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 706.152 ; gain = 437.246
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:38 . Memory (MB): peak = 725.648 ; gain = 456.086
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 737.473 ; gain = 468.566
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -526,7 +537,7 @@ Start Technology Mapping
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4480] The timing for the instance game_graph_an_unit/score_text/font_unit/addr_reg_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 741.172 ; gain = 472.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -550,7 +561,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 741.172 ; gain = 472.266
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -563,7 +574,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 741.172 ; gain = 472.266
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -575,25 +586,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 741.172 ; gain = 472.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 741.172 ; gain = 472.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 741.172 ; gain = 472.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 741.172 ; gain = 472.266
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -610,32 +621,33 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     2|
-|2     |CARRY4   |    19|
-|3     |LUT1     |     9|
-|4     |LUT2     |    54|
-|5     |LUT3     |    52|
-|6     |LUT4     |    92|
-|7     |LUT5     |    97|
-|8     |LUT6     |   201|
-|9     |MUXF7    |    17|
+|2     |CARRY4   |    35|
+|3     |LUT1     |    41|
+|4     |LUT2     |    82|
+|5     |LUT3     |    83|
+|6     |LUT4     |    93|
+|7     |LUT5     |   102|
+|8     |LUT6     |   234|
+|9     |MUXF7    |    13|
 |10    |MUXF8    |     5|
 |11    |RAM32M   |     2|
 |12    |RAMB18E1 |     1|
 |13    |FDCE     |   111|
 |14    |FDPE     |    10|
-|15    |FDRE     |     3|
+|15    |FDRE     |    35|
 |16    |LD       |    13|
-|17    |IBUF     |     4|
-|18    |OBUF     |     6|
+|17    |LDCP     |     1|
+|18    |IBUF     |     4|
+|19    |OBUF     |     8|
 +------+---------+------+
 
 Report Instance Areas: 
 +------+---------------------+-------------------+------+
 |      |Instance             |Module             |Cells |
 +------+---------------------+-------------------+------+
-|1     |top                  |                   |   698|
+|1     |top                  |                   |   875|
 |2     |  clk_generator      |clk_50m_generator  |     2|
-|3     |  game_graph_an_unit |game_graph_animate |   185|
+|3     |  game_graph_an_unit |game_graph_animate |   262|
 |4     |    score_text       |pong_text          |    16|
 |5     |      font_unit      |font_rom           |     4|
 |6     |  keyboard           |kb_monitor         |   149|
@@ -644,27 +656,29 @@ Report Instance Areas:
 |9     |      baud_gen_unit  |mod_m_counter      |    22|
 |10    |      fifo_tx_unit   |fifo               |    18|
 |11    |      uart_tx_unit   |uart_tx            |    43|
-|12    |  vsync_unit         |vga_sync           |   347|
+|12    |  sound              |sound_gen          |   125|
+|13    |  vsync_unit         |vga_sync           |   320|
 +------+---------------------+-------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 741.172 ; gain = 472.266
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 61 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:32 . Memory (MB): peak = 729.402 ; gain = 145.605
-Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:00:39 . Memory (MB): peak = 729.402 ; gain = 459.840
+Synthesis finished with 0 errors, 0 critical warnings and 65 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:34 . Memory (MB): peak = 741.172 ; gain = 157.031
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 741.172 ; gain = 472.266
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 39 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 56 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 15 instances were transformed.
+  A total of 16 instances were transformed.
   LD => LDCE: 13 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 1 instances
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 2 instances
 
-75 Infos, 76 Warnings, 0 Critical Warnings and 0 Errors encountered.
+77 Infos, 81 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 729.402 ; gain = 468.602
+synth_design: Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 741.172 ; gain = 480.027
 INFO: [Common 17-1381] The checkpoint 'C:/Users/Admin/Documents/Vivado/Game/Game.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.031 . Memory (MB): peak = 729.402 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Tue Nov 14 14:22:48 2017...
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 741.172 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 28 17:02:19 2017...
