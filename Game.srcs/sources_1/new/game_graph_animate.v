@@ -523,8 +523,8 @@ module game_graph_animate
          dig0_next = dig0_reg;
          dig1_next = dig1_reg;
         
-         if ( (refr_tick && (wall_x_l == 132)) ||
-           (refr_tick && (wall3_x_l == 132)) )
+         if ( (refr_tick && (wall_x_l == 132) && (ball_y_b < WALL2_Y_T) && (ball_y_t > WALL_Y_B)) ||
+           (refr_tick && (wall3_x_l == 132) && (ball_y_b < WALL4_Y_T) && (ball_y_t > WALL3_Y_B)) )
          begin
             if (dig0_reg == 9)
             begin
